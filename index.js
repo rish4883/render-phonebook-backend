@@ -22,7 +22,7 @@ app.use(morgan(function (tokens, req, res) {
 })
 )
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 
 let persons  = [
   { 
